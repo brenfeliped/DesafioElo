@@ -20,6 +20,46 @@
             </div>
         </main>
     </header>
+    <form class="formulario" action="http://localhost:8080" method="POST">
+        <div>
+            <label for="nome" class="label-incial">Nome:</label>
+            <input type="text" id="nome" />
+        </div>
+        <div>
+            <label for="telefone" class="label-incial">Telefone:</label>
+            <input type="text" id="telefone" />
+        </div>
+        <div>
+            <label for="primeiro_contato" class="label-incial">Como nos conheceu:</label>
+            <select id="primeiro_contato">
+                <option value="Tv">Tv</option>
+                <option value="Internet">Internet</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </div>
+        <div class="rede_social_container">
+            <p>Possui rede social:</p>
+            <div class="option_container">
+                <input type="radio" id="sim" name="rede_social" value="sim">
+                <label for="sim">Sim</label><br>
+                <input type="radio" id="nao" name="rede_social" value="nao">
+                <label for="nao">Não</label><br>
+            </div>
+            <div>
+                <p>Quais:</p>
+                <div class="rede_social_container2">
+                    <input type="checkbox" id="facebook" name="facebook">
+                    <label for="facebook">Facebook</label><br>
+                    <div class="linked_container">
+                        <input type="checkbox" id="linkedln" name="linkedln">
+                        <label for="linkedln">Linkedln</label><br>
+                    </div>
+                    <input type="checkbox" id="instagram" name="instagram">
+                    <label for="instagram">Instagram</label><br>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 
 </html>
