@@ -20,14 +20,14 @@
             </div>
         </main>
     </header>
-    <form class="formulario" action="http://localhost:8080" method="POST">
+    <form class="formulario" id="form_unico">
         <div>
             <label for="nome" class="label-incial">Nome:</label>
             <input type="text" id="nome" />
         </div>
         <div>
             <label for="telefone" class="label-incial">Telefone:</label>
-            <input type="text" id="telefone" />
+            <input type="text" id="telefone" placeholder="99–99999999" />
         </div>
         <div>
             <label for="primeiro_contato" class="label-incial">Como nos conheceu:</label>
@@ -40,12 +40,14 @@
         <div class="rede_social_container">
             <p>Possui rede social:</p>
             <div class="option_container">
-                <input type="radio" id="sim" name="rede_social" value="sim">
+                <input type="radio" id="sim" name="rede_social" value="sim"
+                    onclick="ShowSocialMedia('rede-social-div')">
                 <label for="sim">Sim</label><br>
-                <input type="radio" id="nao" name="rede_social" value="nao">
+                <input type="radio" id="nao" name="rede_social" value="nao"
+                    onclick="ShowSocialMedia('rede-social-div')">
                 <label for="nao">Não</label><br>
             </div>
-            <div>
+            <div style="display: none" id="rede-social-div">
                 <p>Quais:</p>
                 <div class="rede_social_container2">
                     <input type="checkbox" id="facebook" name="facebook">
@@ -60,6 +62,10 @@
             </div>
         </div>
     </form>
+    <div class="botao-enviar">
+        <button id="enviar">Enviar</button>
+    </div>
+    <script src="js/validations.js"></script>
 </body>
 
 </html>
