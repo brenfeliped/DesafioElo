@@ -21,14 +21,17 @@
         </main>
     </header>
     <form class="formulario" id="form_unico">
+        <br>
         <div>
             <label for="nome" class="label-incial">Nome:</label>
             <input type="text" id="nome" />
-        </div>
+        </div><br>
+
         <div>
             <label for="telefone" class="label-incial">Telefone:</label>
             <input type="text" id="telefone" placeholder="99–99999999" />
-        </div>
+        </div><br>
+
         <div>
             <label for="primeiro_contato" class="label-incial">Como nos conheceu:</label>
             <select id="primeiro_contato">
@@ -40,11 +43,9 @@
         <div class="rede_social_container">
             <p>Possui rede social:</p>
             <div class="option_container">
-                <input type="radio" id="sim" name="rede_social" value="sim"
-                    onclick="ShowSocialMedia('rede-social-div')">
+                <input type="radio" id="sim" name="rede_social" value="sim" onclick="ShowSocialMedia('sim')">
                 <label for="sim">Sim</label><br>
-                <input type="radio" id="nao" name="rede_social" value="nao"
-                    onclick="ShowSocialMedia('rede-social-div')">
+                <input type="radio" id="nao" name="rede_social" value="nao" onclick="ShowSocialMedia('nao')">
                 <label for="nao">Não</label><br>
             </div>
             <div style="display: none" id="rede-social-div">
@@ -63,9 +64,9 @@
         </div>
     </form>
     <div class="botao-enviar">
-        <button id="enviar">Enviar</button>
+        <button id="enviar" class="myButton">Enviar</button>
     </div>
-    <script src="js/validations.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

@@ -21,12 +21,12 @@ main {
 
 .formulario {
     left:40%;
-    top:35%;
+    top:20%;
     font-size: 20px;
-    width: 300px;
-    height: 360px;
+    width: 320px;
+    height: 450px;
     position: absolute;
-    background-color: #9a97af;
+    background-color: #f8f8f8;
     opacity: 60%;
 }
 
@@ -36,24 +36,48 @@ main {
     width: 90px;
     text-align: right;
 }
+
 .rede_social_container{
     width: 100px;
     text-align: right;
 }
+
 .option_container{
     width: 140px;
 }
+
 .rede_social_container2{
     width: 180px;
     text-align: auto;
 }
+
 .linked_container{
     text-align: right;
     width:175px;
 }
+
 .botao-enviar{
-    left:45%;
-    top:85%;
+    left:46%;
+    top:83%;
     font-size: 20px;
     position: absolute;
+    color: #fff;
+    background: #226fbe;
+    transition: none;
+}
+
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #000000 5%, #0688fa 100%);
+	background-color:#000000;
+	border-radius:3px;
+	border:1px solid #040502;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:9px 36px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
 }
